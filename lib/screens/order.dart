@@ -43,7 +43,11 @@ class OrderPage extends StatelessWidget {
               ),
               Text(
                 'Order booked \nsuccesfully',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context)
+                    .textTheme
+                    .headline4
+                    ?.copyWith(fontSize: 35),
+                textAlign: TextAlign.center,
               ),
               SizedBox(
                 height: size.height * 0.04,
